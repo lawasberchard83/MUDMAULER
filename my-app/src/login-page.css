@@ -1,0 +1,184 @@
+.login-container {
+  display: flex;
+  min-height: 100vh;
+  background: #FAFBFB; /* Same as landing page main background */
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.login-left {
+  position: relative;
+  flex: 1.2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  background: #FAFBFB;
+  overflow: hidden;
+  min-width: 470px;
+}
+
+.tire-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: left center;
+  opacity: 0.97;                    /* CLEARER, almost fully visible */
+  filter: none;                     /* REMOVE excessive darkening */
+  z-index: 1;
+}
+
+/* Top left word */
+.mudmauler-text {
+  position: absolute;
+  top: 38px;
+  left: 38px;
+  font-weight: 900;
+  font-size: 2.8rem;
+  color: #29D497;  /* brand accent green */
+  letter-spacing: 2px;
+  z-index: 2;
+  text-shadow: 0 2px 8px #212D2C60;
+  font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+}
+
+/* Welcome overlay -- a little lower */
+.welcome-wrapper {
+  position: absolute;
+  top: 64%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  transform: translateY(-50%);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.welcome-text {
+  display: inline-block;
+  color: #1B212D;
+  font-size: 2.7rem;
+  font-weight: bold;
+  text-shadow: 0 3px 16px #212D2C30, 1px 1px 8px #fff;
+  background: rgba(41, 212, 151, 0.12);  /* subtle green */
+  border-radius: 20px;
+  padding: 16px 35px;
+  box-shadow: 0 2px 12px #212D2C12;
+}
+
+.login-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px 45px;
+  background: #212D2C;    /* header/nav color */
+  min-height: 100vh;
+}
+
+.welcome-banner {
+  color: #29D497;                /* accent green */
+  font-size: 2.6rem;
+  font-weight: 900;
+  text-align: left;
+  margin-bottom: 22px;
+  letter-spacing: 1.5px;
+  font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+  text-shadow: 0 2px 8px #212D2C30, 1px 1px 8px #fff;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 16px;
+  font-weight: 700;
+  color: #fff;
+  font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+}
+
+.login-desc {
+  font-size: 1.15rem;
+  margin-bottom: 32px;
+  color: #b2bbc3;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.login-form label {
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 6px;
+}
+
+.login-form input {
+  padding: 12px;
+  border-radius: 9px;
+  border: 1px solid #355056;
+  font-size: 1.1rem;
+  background: #fff;
+  color: #1B212D;
+  margin-bottom: 12px;
+  transition: border-color 0.2s;
+}
+
+.login-form input:focus {
+  border-color: #29D497;
+  outline: none;
+}
+
+.login-form input::placeholder {
+  color: #61687C;
+  font-size: 1.05rem;
+}
+
+.login-options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.95rem;
+  color: #b2bbc3;
+  margin-bottom: 16px;
+}
+
+.forgot-pwd {
+  color: #29D497;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.login-btn {
+  background: #29D497;
+  color: #fff;
+  padding: 13px 0;
+  border-radius: 9px;
+  border: none;
+  font-size: 1.15rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-bottom: 14px;
+  transition: background 0.2s;
+}
+
+.login-btn:hover {
+  background: #fff;
+  color: #29D497;
+}
+
+.signup-link {
+  font-size: 1.08rem;
+  color: #b2bbc3;
+  margin-top: 18px;
+}
+
+.signup-link span {
+  cursor: pointer;
+  color: #29D497;
+  text-decoration: underline;
+  font-weight: 600;
+}
