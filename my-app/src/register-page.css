@@ -1,0 +1,129 @@
+/* register-page.css */
+.register-container {
+  display: flex;
+  min-height: 100vh;
+  background: #FAFBFB;
+  font-family: Segoe UI, Arial, sans-serif;
+}
+
+.register-left {
+  position: relative;
+  flex: 1.2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  background: #FAFBFB;
+  overflow: hidden;
+  min-width: 470px;
+}
+
+.tire-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: left center;
+  opacity: 0.97;
+  filter: none;
+  z-index: 1;
+}
+
+.mudmauler-text {
+  position: absolute;
+  top: 38px;
+  left: 38px;
+  font-weight: 900;
+  font-size: 2.8rem;
+  color: #29D497;
+  letter-spacing: 2px;
+  z-index: 2;
+  text-shadow: 0 2px 8px #212D2C60;
+  font-family: Segoe UI, Arial, Helvetica, sans-serif;
+}
+
+.register-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px 45px;
+  background: #212D2C;
+  min-height: 100vh;
+}
+
+.welcome-banner {
+  color: #29D497;
+  font-size: 2.6rem;
+  font-weight: 900;
+  text-align: left;
+  margin-bottom: 22px;
+  letter-spacing: 1.5px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 16px;
+  font-weight: 700;
+  color: #fff;
+  font-family: Segoe UI, Arial, Helvetica, sans-serif;
+}
+
+.register-desc {
+  font-size: 1.15rem;
+  margin-bottom: 32px;
+  color: #b2bbc3;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.register-form label {
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 6px;
+}
+
+.register-form input {
+  padding: 12px;
+  border-radius: 9px;
+  border: 1px solid #355056;
+  font-size: 1.1rem;
+  background: #fff;
+  color: #1B212D;
+  margin-bottom: 12px;
+  transition: border-color 0.2s;
+}
+
+.register-form input:focus {
+  border-color: #29D497;
+  outline: none;
+}
+
+.register-form input::placeholder {
+  color: #61687C;
+  font-size: 1.05rem;
+}
+
+.register-btn {
+  background: #29D497;
+  color: #fff;
+  padding: 13px 0;
+  border-radius: 9px;
+  border: none;
+  font-size: 1.15rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-bottom: 14px;
+  transition: background 0.2s;
+}
+
+.register-btn:hover {
+  background: #fff;
+  color: #29D497;
+}
